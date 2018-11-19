@@ -4,61 +4,71 @@
             "title": "Passion of the Cross",
             "type": "Stone: Marichal",
             "height": "32 cm",
-            "width": "25 cm"
+            "width": "25 cm",
+            "selected": false
         },
         {
             "title": "Passion of the Cross",
             "type": "Stone: Marichal",
             "height": "50 cm",
-            "width": "35 cm"
+            "width": "35 cm",
+            "selected": false
         },
         {
             "title": "Nativity Grotto",
             "type": "Stone: Marichal",
             "height": "30 cm",
-            "width": "29 cm"
+            "width": "29 cm",
+            "selected": false
         },
         {
             "title": "Christmas Candle",
             "type": "Stone: Marichal",
             "height": "30 cm",
-            "width": "30 cm"
+            "width": "30 cm",
+            "selected": false
         },
         {
             "title": "Virgin Mary holding Jesus",
             "type": "Stone: Carrara",
             "height": "45 cm",
-            "width": "20 cm"
+            "width": "20 cm",
+            "selected": false
         },
         {
             "title": "Virgin Mary holding Jesus",
             "type": "Stone: Carrara",
             "height": "50 cm",
-            "width": "30 cm"
+            "width": "30 cm",
+            "selected": false
         },
         {
             "title": "Virgin Mary and Jesus",
             "type": "Stone: Carrara",
             "height": "35 cm",
-            "width": "20 cm"
+            "width": "20 cm",
+            "selected": false
         },
         {
             "title": "Holy Family",
             "type": "Stone: Marichal",
             "height": "45 cm",
-            "width": "30 cm"
+            "width": "30 cm",
+            "selected": false
         },
         {
             "title": "Jesus and Saint Sharbel",
             "type": "Stone: Marichal",
             "height": "40 cm",
-            "width": "30 cm"
+            "width": "30 cm",
+            "selected": false
         },
         {
             "title": "Jesus Christ",
             "type": "Stone: Marichal",
             "height": "40 cm",
-            "width": "30 cm"
+            "width": "30 cm",
+            "selected": false
         }
     ]
 }
