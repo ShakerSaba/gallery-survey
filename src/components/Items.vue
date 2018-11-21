@@ -1,11 +1,6 @@
 <template>
   <div>
     <h3>Sanity Test</h3>
-    <ul id="survey items" >
-      <li v-for="item in list" v-bind:key="item.title + list.indexOf(item)">
-        {{ item.selected }}
-      </li>
-    </ul>
     <gallery :images="images" :index="index" @close="index = null"></gallery>
     <div
       v-for="(image, imageIndex) in images"
@@ -28,18 +23,7 @@
     data: function () {
       return {
         list: items.items,
-        images: [
-          'https://i.imgur.com/n3aTNd0.jpg',
-          'https://i.imgur.com/RhJcDwN.jpg',
-          'https://i.imgur.com/9geQa78.jpg',
-          'https://i.imgur.com/xDqGJik.jpg',
-          'https://i.imgur.com/Znl9uWL.jpg',
-          'https://i.imgur.com/sPcSPj9.jpg',
-          'https://i.imgur.com/XdF84qK.png',
-          'https://i.imgur.com/XzfN2XB.jpg',
-          'https://i.imgur.com/w2A6brw.png',
-          'https://i.imgur.com/Zg6Kpka.png',
-        ],
+        images: items.images,
         index: null
       };
     },
