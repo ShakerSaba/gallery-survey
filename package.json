@@ -19,7 +19,8 @@
     "vuex": "^3.0.1",
     "survey-vue": "^1.0.56",
     "surveyjs-editor": "^1.0.56",
-    "surveyjs-widgets": "^1.0.56"
+    "surveyjs-widgets": "^1.0.56",
+    "vue-localstorage": "^0.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

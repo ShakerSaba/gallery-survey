@@ -1,9 +1,10 @@
 <template>
   <div>
     <h3>Art Gallery Survey</h3>
-    <p>Please check the art pieces you wish to see added to the art gallery - it is suggested you select 10.</p>
+    <p>Please select the art pieces you wish to see added to the art gallery. It is suggested you select around 10 items.</p>
     <br/>
     Name: <input type="text" id="name" v-model="name">
+    Email: <input type="text" id="email" v-model="email">
     <button id="submitbutton" @click="submit">Submit</button>
     <br>
 
@@ -31,7 +32,8 @@
         list: items.items,
         images: items.images,
         index: null,
-        name: ''
+        name: '',
+        email: ''
       };
     },
     methods: {
