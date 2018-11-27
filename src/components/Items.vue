@@ -24,7 +24,8 @@
  
 <script>
   import VueGallery from 'vue-gallery';
-  import items from '@/assets/items.json'
+  import items from '@/assets/items.json';
+  import axios from "axios";
   
   export default {
     data: function () {
@@ -38,7 +39,23 @@
     },
     methods: {
       submit: function(){
-        console.log("clicked");
+        var results = [];
+        for(var i=0;i>this.list.length;++i){
+          results.push(this.list[i].selected);
+        }
+        
+        axios.post('https://morning-retreat-59694.herokuapp.com/http://72.142.118.154:1337/api/v1/records/log-record',
+        {
+          'name': this.name,
+          'email': this.email,
+          'results': results.toString()
+        })
+        .then(response => {
+          console.log(response);
+        })
+        .catch(error => {
+          console.log(error);
+        });
       }
     },
     components: {
