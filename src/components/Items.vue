@@ -44,7 +44,19 @@
           results.push(this.list[i].selected);
         }
         
-        axios.post('https://morning-retreat-59694.herokuapp.com/http://72.142.118.154:1337/api/v1/records/log-record',
+        var instance = axios.create(
+          {
+            baseURL: 'https://gallery-backend.herokuapp.com/',
+            timeout: 10000,
+            headers: {
+              'Access-Control-Allow-Origin' : 'https://gallery-backend.herokuapp.com/',
+              'Access-Control-Allow-Headers' : 'Origin, X-Requested-With, Content-Type, Accept',
+              'Access-Control-Allow-Credentials' : true
+            }
+          }
+        )
+
+        instance.post('api/v1/records/log-record',
         {
           'name': this.name,
           'email': this.email,
