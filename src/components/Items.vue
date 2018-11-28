@@ -40,29 +40,30 @@
     methods: {
       submit: function(){
         var results = [];
-        for(var i=0;i>this.list.length;++i){
-          results.push(this.list[i].selected);
+        var self = this;
+
+        for(var i=0;i>self.list.length;++i){
+          results.push(self.list[i].selected);
         }
-        
-        var instance = axios.create(
+               
+        axios.post('https://gallery-backend.herokuapp.com/api/v1/records/log-record',
           {
-            baseURL: 'https://gallery-backend.herokuapp.com/',
-            timeout: 10000,
+            'name': self.name,
+            'email': self.email,
+            'results': results.toString()
+          },
+          {
             headers: {
-              'Access-Control-Allow-Origin' : 'https://gallery-backend.herokuapp.com/',
-              'Access-Control-Allow-Headers' : 'Origin, X-Requested-With, Content-Type, Accept',
-              'Access-Control-Allow-Credentials' : true
+              'Content-Type': 'multipart/form-data',
+              timeout: 10000,
+              headers: {
+                'Access-Control-Allow-Origin' : '*',
+                'Access-Control-Allow-Headers' : 'headers, Origin, X-Requested-With, Content-Type, Accept',
+                'Access-Control-Allow-Credentials' : true
+              }
             }
           }
-        )
-
-        instance.post('api/v1/records/log-record',
-        {
-          'name': this.name,
-          'email': this.email,
-          'results': results.toString()
-        })
-        .then(response => {
+        ).then(response => {
           console.log(response);
         })
         .catch(error => {
