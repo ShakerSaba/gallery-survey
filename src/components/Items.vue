@@ -46,22 +46,11 @@
           results.push(self.list[i].selected);
         }
                
-        axios.post('https://gallery-backend.herokuapp.com/api/v1/records/log-record',
+        axios.post('https://gallery-storage.herokuapp.com/results',
           {
             'name': self.name,
             'email': self.email,
             'results': results.toString()
-          },
-          {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-              timeout: 10000,
-              headers: {
-                'Access-Control-Allow-Origin' : '*',
-                'Access-Control-Allow-Headers' : 'headers, Origin, X-Requested-With, Content-Type, Accept',
-                'Access-Control-Allow-Credentials' : true
-              }
-            }
           }
         ).then(response => {
           console.log(response);
