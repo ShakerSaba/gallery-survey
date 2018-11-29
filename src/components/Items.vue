@@ -2,6 +2,7 @@
   <div>
     <h3>Art Gallery Survey</h3>
     <p>Please select the art pieces you wish to see added to the art gallery. It is suggested you select around 10 items.</p>
+    <p>When you are done, enter your Email and Name then hit the "Submit" button.</p>
     <br/>
     Name: <input type="text" id="name" v-model="name">
     Email: <input type="text" id="email" v-model="email">
