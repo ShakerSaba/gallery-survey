@@ -42,25 +42,26 @@
         var results = [];
         var self = this;
 
-        for(var i=0;i>self.list.length;++i){
+        for(var i=0;i<self.list.length;++i){
           results.push(self.list[i].selected);
         }
-               
-        axios.post('https://gallery-storage.herokuapp.com/results',
-          {
-            'name': self.name,
-            'email': self.email,
-            'results': results.toString()
+        
+        axios({
+          method : "POST",
+          url : 'https://gallery-storage.herokuapp.com/results',
+          data : {
+            name: self.name,
+            email: self.email,
+            results: results.toString()
           },
-          {
-            headers: {
-              timeout: 10000,
-              'Access-Control-Allow-Origin' : '*',
-              'Access-Control-Allow-Headers' : 'Authorization, Origin, X-Requested-With, Content-Type, Accept',
-              'Access-Control-Allow-Credentials' : true
-            }
+          headers: {
+            timeout: 10000,
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Access-Control-Allow-Origin' : '*',
+            'Access-Control-Allow-Headers' : 'Authorization, Origin, X-Requested-With, Content-Type, Accept',
+            'Access-Control-Allow-Credentials' : true
           }
-        ).then(response => {
+        }).then(response => {
           console.log(response);
         })
         .catch(error => {
