@@ -55,11 +55,9 @@
           {
             headers: {
               timeout: 10000,
-              headers: {
-                'Access-Control-Allow-Origin' : '*',
-                'Access-Control-Allow-Headers' : 'Authorization, Origin, X-Requested-With, Content-Type, Accept',
-                'Access-Control-Allow-Credentials' : true
-              }
+              'Access-Control-Allow-Origin' : '*',
+              'Access-Control-Allow-Headers' : 'Authorization, Origin, X-Requested-With, Content-Type, Accept',
+              'Access-Control-Allow-Credentials' : true
             }
           }
         ).then(response => {
