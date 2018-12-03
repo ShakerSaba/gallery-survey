@@ -151,1008 +151,1008 @@
             "type": "Stone: Marichal",
             "height": "32 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Passion of the Cross",
             "type": "Stone: Marichal",
             "height": "50 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Nativity Grotto",
             "type": "Stone: Marichal",
             "height": "30 cm",
             "width": "29 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Christmas Candle",
             "type": "Stone: Marichal",
             "height": "30 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary holding Jesus",
             "type": "Stone: Carrara",
             "height": "45 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary holding Jesus",
             "type": "Stone: Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary and Jesus",
             "type": "Stone: Carrara",
             "height": "35 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Holy Family",
             "type": "Stone: Marichal",
             "height": "45 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus and Saint Sharbel",
             "type": "Stone: Marichal",
             "height": "40 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus Christ",
             "type": "Stone: Marichal",
             "height": "40 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Guardian Angel",
             "type": "Stone: Marichal",
             "height": "50 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel",
             "type": "Stone: Testa",
             "height": "40 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary",
             "type": "Stone: Carrara",
             "height": "30 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary and Jesus",
             "type": "Stone: Alicante",
             "height": "50 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel and the Oil Lamp",
             "type": "Stone: Marichal & Tala Maron",
             "height": "50 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Holy Family",
             "type": "Stone: Testa",
             "height": "60 cm",
             "width": "45 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel",
             "type": "Stone: Bianco Pi",
             "height": "50 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Trinity: Father, Son and Holy Spirit",
             "type": "Stone: Carrara",
             "height": "80 cm",
             "width": "40 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Elie",
             "type": "Stone: Carrara",
             "height": "80 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Passion of Jesus Christ",
             "type": "Stone: Kour",
             "height": "60 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Father Antonios Tarabay",
             "type": "Made of Marble Powder",
             "height": "80 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary",
             "type": "Stone: أصفر فرني",
             "height": "200 cm",
             "width": "65 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus on the Cross",
             "type": "Stone: Testa",
             "height": "170 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary",
             "type": "130 cm",
             "height": "50 cm",
             "width": "Stone: Carrara",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Our Lady of the Rosary",
             "type": "Stone: Testa",
             "height": "200 cm",
             "width": "75 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "St. Sharbel",
             "type": "Stone: Testa",
             "height": "200 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus Suffering",
             "type": "Stone: Marichal",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "The Immaculate Conception of the Blessed Virgin Mary",
             "type": "Stone: Carrara",
             "height": "130 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus The Good Shepherd",
             "type": "Stone: Carrara",
             "height": "130 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Face of Jesus engraved on Granite Marble",
             "type": "Stone: Granite",
             "height": "100 cm",
             "width": "80 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary",
             "type": "Stone: Marichal",
             "height": "100 cm",
             "width": "80 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel in the heart of a cedar",
             "type": "Stone: Marichal",
             "height": "35 cm",
             "width": "35 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel praying",
             "type": "Stone: Testa",
             "height": "130 cm",
             "width": "80 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Rafqa",
             "type": "Stone: Carrara",
             "height": "200 cm",
             "width": "80 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Nohra",
             "type": "Stone: Testa",
             "height": "150 cm",
             "width": "85 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Therese",
             "type": "Stone: Carrara",
             "height": "170 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Divine Mercy",
             "type": "Stone: Carrara",
             "height": "200 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Marina",
             "type": "Stone: Testa",
             "height": "150 cm",
             "width": "130 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Persecution of Syriac People",
             "type": "Stone: Testa",
             "height": "200 cm",
             "width": "130 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint George",
             "type": "Stone: Testa",
             "height": "150 cm",
             "width": "140 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel",
             "type": "Stone: Testa",
             "height": "200 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Elie",
             "type": "Stone: Testa",
             "height": "200 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary holding Jesus",
             "type": "Stone: Testa",
             "height": "800 cm",
             "width": "350 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Baptism",
             "type": "Stone: Marichal",
             "height": "150 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel",
             "type": "Stone: Marichal",
             "height": "120 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint George",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "120 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Saint Sharbel",
             "type": "Stone: Marichal",
             "height": "100 cm",
             "width": "120 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Pope John Paul II",
             "type": "Stone: Carrara",
             "height": "130 cm",
             "width": "110 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus Knocking at the Door",
             "type": "Stone: Marichal",
             "height": "130 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary",
             "type": "Stone: Marichal",
             "height": "130 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Last Supper",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "130 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Last Supper",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "150 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Lebanese Saints in the Heart of a Cedar",
             "type": "Stone: Marichal",
             "height": "170 cm",
             "width": "120 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Jesus Calming the Storm",
             "type": "Stone: Marichal",
             "height": "180 cm",
             "width": "180 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Therese",
             "type": "Stone: Marichal",
             "height": "170 cm",
             "width": "230 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Saint Sharbel",
             "type": "Stone: Marichal",
             "height": "70 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus praying in the Garden of Gethsemane",
             "type": "Stone: Marichal",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Elijah",
             "type": "Stone: Marichal",
             "height": "85 cm",
             "width": "80 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Sacred Heart of Jesus",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "70 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint George",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "70 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Baptism",
             "type": "Stone: Marichal",
             "height": "150 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Tiger",
             "type": "Oil Painting on Canvas",
             "height": "50 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Parrot",
             "type": "Oil Painting on Canvas",
             "height": "40 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Saint Sharbel",
             "type": "Oil Painting on Canvas",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Red Flower",
             "type": "Oil Painting on Canvas",
             "height": "100 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "God",
             "type": "Oil Painting on Canvas",
             "height": "90 cm",
             "width": "70 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Clara",
             "type": "Oil Painting on Canvas",
             "height": "90 cm",
             "width": "70 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Padre Pio",
             "type": "Oil Painting on Canvas",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Icon of Elijah the Prophet",
             "type": "Oil Painting on Canvas",
             "height": "120 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Portrait of a Lady",
             "type": "Oil Painting on Canvas",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Portrait of a Lady",
             "type": "Oil Painting on Canvas",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Running Horses",
             "type": "Oil Painting on Canvas",
             "height": "100 cm",
             "width": "150 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Magnolia Flower",
             "type": "Oil Painting on Canvas",
             "height": "90 cm",
             "width": "150 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Sacred heart of Jesus Christ",
             "type": "Stain Glass",
             "height": "40 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Sharbel",
             "type": "Stain Glass",
             "height": "40 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saint Marguerite Bourgeoys",
             "type": "Stain Glass",
             "height": "40 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Swan",
             "type": "Stain Glass",
             "height": "50 cm",
             "width": "40 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Flowers",
             "type": "Stain Glass",
             "height": "130 cm",
             "width": "130 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Bird",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Model",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Free Woman",
             "type": "Stone: Marichal or Carrara",
             "height": "60 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Couple",
             "type": "Stone: Marichal or Carrara",
             "height": "60 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Guitarist",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Motherhood",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Yoga",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Free Man",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Three in One Statue: Christ, Church and Virgin Mary",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Lovers",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Motherhood",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Guitar",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Marriage",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Dancer",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Angel",
             "type": "Stone: Marichal or Carrara",
             "height": "30 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Couple in Honeymoon",
             "type": "Stone: Marichal or Carrara",
             "height": "45 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Holy Family",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Commitment",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Tears of Sin leading to death",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Liberty - Freedom",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Motherhood",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Jesus in the Heart of Mary",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Eagle",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Dancing Couple",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Lovers",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Motherhood Flowers of Life",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Mermaid",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Virgin Mary holding Jesus Christ",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Prodigal Son",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Ballet Dancer",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Rooster Crowing",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Mangolia Lady Flower",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Ballet Dancers",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Dance of the Shark",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Infinity Symbol",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Acrobatic Dancers",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Angel",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Praying with a humble heart",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Thinker",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Thinker",
             "type": "Stone: Marichal or Carrara",
             "height": "30 cm",
             "width": "40 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Sadness",
             "type": "Stone: Marichal or Carrara",
             "height": "20 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "The Man is the Head of Woman",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Infinity Symbol",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Endless Love",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saxophonist",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "20 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Freedom",
             "type": "Stone: Marichal or Carrara",
             "height": "50 cm",
             "width": "30 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Singer",
             "type": "Stone: Carrara",
             "height": "75 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Mother playing with her Baby",
             "type": "Stone: Travertino Nivona",
             "height": "80 cm",
             "width": "43 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Modern Woman",
             "type": "Stone: Marichal or Carrara",
             "height": "130 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Headless Roman Lady",
             "type": "Stone: Travertino Classico",
             "height": "100 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Mermaid",
             "type": "Red Stone: Rossa Verona",
             "height": "120 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Old Bay of Jounieh",
             "type": "Stone: Marichal",
             "height": "110 cm",
             "width": "200 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Dancing Couple",
             "type": "Stone: Carrara",
             "height": "120 cm",
             "width": "70 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Aerial Dance",
             "type": "Stone: Rossa Verona",
             "height": "60 cm",
             "width": "25 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Saida Castle",
             "type": "Stone: Marichal",
             "height": "70 cm",
             "width": "100 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Running Horses",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "250 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Baalbek Castle",
             "type": "Stone: Marichal",
             "height": "100 cm",
             "width": "230 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Eagle above the Great wall of China",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "200 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Cavalry going through the river",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "200 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Phoenician Galleon",
             "type": "Stone: Marichal",
             "height": "50 cm",
             "width": "50 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Phoenician Galleon",
             "type": "Stone: Marichal",
             "height": "60 cm",
             "width": "40 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Lady holding a water Jar from which a scarf comes down",
             "type": "Stone: Marichal",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Old Man and his Donkey",
             "type": "Stone: Marichal",
             "height": "80 cm",
             "width": "60 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Running Horse",
             "type": "Stone: Marichal",
             "height": "80 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 1
         },
         {
             "title": "Peacock and Flowers",
             "type": "Stone: Marichal",
             "height": "90 cm",
             "width": "70 cm",
-            "selected": false
+            "selected": false, "flex": 8
         },
         {
             "title": "Horses",
             "type": "Stone: Marichal",
             "height": "80 cm",
             "width": "90 cm",
-            "selected": false
+            "selected": false, "flex": 8
         }
     ]
 }
