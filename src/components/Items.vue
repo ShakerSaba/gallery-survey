@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2><b>Art Gallery Survey</b></h2>
-    <p>Please select the art pieces you wish to see added to the art gallery. It is suggested you select around 10 items.</p>
+    <p>Please select the art pieces you wish to see added to the art gallery. It is suggested you select around 10 items across <i>all</i> categories.</p>
     <br/>
     Name: <input type="text" id="name" v-model="name">
     Email: <input type="text" id="email" v-model="email">
@@ -11,11 +11,21 @@
         
     <h3>Select a Category:</h3>
 
-    <button @click="group = 'SMALLSTONE'">Smaller Stonework</button>
-    <button @click="group = 'CARVING'">Stone Carvings</button>
-    <button @click="group = 'SCULPTURE'">Stone Statues</button>
-    <button @click="group = 'PAINTING'">Paintings</button>
-    <button @click="group = 'STAINGLASS'">Stained Glass</button>
+    <button v-if="group == 'SMALLSTONE'" class="disabled">Smaller Stonework</button>
+    <button v-else class="button" @click="group = 'SMALLSTONE'">Smaller Stonework</button>
+
+    <button v-if="group == 'CARVING'" class="disabled">Stone Carvings</button>
+    <button v-else class="button" @click="group = 'CARVING'">Stone Carvings</button>
+
+    <button v-if="group == 'SCULPTURE'" class="disabled">Stone Statues</button>
+    <button v-else class="button" @click="group = 'SCULPTURE'">Stone Statues</button>
+
+    <button v-if="group == 'PAINTING'" class="disabled">Paintings</button>
+    <button v-else class="button" @click="group = 'PAINTING'">Paintings</button>
+
+    <button v-if="group == 'STAINGLASS'" class="disabled">Stained Glass</button>
+    <button v-else class="button" @click="group = 'STAINGLASS'">Stained Glass</button>
+
 
     <gallery :images="images" :index="index" @close="index = null">
       <div v-if="index!=null">
@@ -64,7 +74,7 @@
           results.push(self.list[i].selected);
         }
                
-        axios.post('https://gallery-backend.herokuapp.com/api/v1/records/log-record',
+        axios.post('https://gallery-storage.herokuapp.com/results',
           {
             'name': self.name,
             'email': self.email,
@@ -72,7 +82,7 @@
           },
           {
             headers: {
-              'Content-Type': 'multipart/form-data',
+              'Content-Type': 'application/x-www-form-urlencoded',
               timeout: 10000,
               headers: {
                 'Access-Control-Allow-Origin' : '*',
@@ -127,5 +137,34 @@ a {
 .image {
   width: 96%;
   margin: 2%;
+}
+
+.button {
+  background-color: rgb(81, 165, 221);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border: 1px solid rgb(81, 165, 221);
+}
+
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.disabled {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid rgb(81, 165, 221);
 }
 </style>
