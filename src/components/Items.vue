@@ -1,21 +1,35 @@
 <template>
   <div>
-    <h3>Art Gallery Survey</h3>
+    <h2><b>Art Gallery Survey</b></h2>
     <p>Please select the art pieces you wish to see added to the art gallery. It is suggested you select around 10 items.</p>
     <br/>
     Name: <input type="text" id="name" v-model="name">
     Email: <input type="text" id="email" v-model="email">
     <button id="submitbutton" @click="submit">Submit</button>
     <br>
-
+    <br>
     
-    <gallery :images="images" :index="index" @close="index = null"></gallery>
+    
+    <h3>Select a Category:</h3>
+
+    <button @click="group = 'SMALLSTONE'">Smaller Stonework</button>
+    <button @click="group = 'CARVING'">Stone Carvings</button>
+    <button @click="group = 'SCULPTURE'">Stone Statues</button>
+    <button @click="group = 'PAINTING'">Paintings</button>
+    <button @click="group = 'STAINGLASS'">Stained Glass</button>
+
+    <gallery :images="images" :index="index" @close="index = null">
+      <div v-if="index!=null">
+        <h3 style="color=white">{{ list[index].title }}</h3>
+      </div>
+    </gallery>
     <div class="flex-container">
       <div
         v-for="(image, imageIndex) in images"
         :key="imageIndex"
         class="imageFrame"
-        :style="'flex:' + list[imageIndex].flex + '1 content'"
+        :style="'flex:' + list[imageIndex].flex + '1 20%'"
+        v-if="list[imageIndex].group == group"
       >
         <img class="image" @click="index = imageIndex" :src="image">
         <br/>
@@ -38,7 +52,8 @@
         images: items.images,
         index: null,
         name: '',
-        email: ''
+        email: '',
+        group: ''
       };
     },
     methods: {
@@ -107,7 +122,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  align-content: stretch;
+  align-content: flex-start;
 }
 
 .image {
