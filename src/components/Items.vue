@@ -8,8 +8,7 @@
     <button id="submitbutton" @click="submit">Submit</button>
     <br>
     <br>
-    
-    
+        
     <h3>Select a Category:</h3>
 
     <button @click="group = 'SMALLSTONE'">Smaller Stonework</button>
