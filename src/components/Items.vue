@@ -27,7 +27,7 @@
         v-for="(image, imageIndex) in images"
         :key="imageIndex"
         class="imageFrame"
-        :style="'flex:' + list[imageIndex].flex + '1 20%'"
+        :style="'flex:' + list[imageIndex].flex + '1 24%'"
         v-if="list[imageIndex].group == group"
       >
         <img class="image" @click="index = imageIndex" :src="image">
