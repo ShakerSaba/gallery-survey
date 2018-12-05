@@ -106,7 +106,7 @@
                
         axios({
           method : "POST",
-          url : 'http://gallery-storage.herokuapp.com/results',
+          url : 'https://gallery-storage.herokuapp.com/results',
           data : {
             name: self.name,
             email: self.email,
