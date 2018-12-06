@@ -8,8 +8,8 @@
       Name: <input type="text" id="name" v-model="name">
       Email: <input type="text" id="email" v-model="email">
       <button id="submitbutton" @click="submit">Submit</button>
-      <br>
-      <br>
+      <br/>
+      <br/>
           
       <h3>Select a Category:</h3>
       <button v-if="group == 'SMALLSTONE'" class="disabled">Smaller Stonework</button>
@@ -39,7 +39,8 @@
           <img class="image" @click="index = imageIndex" :src="image">
           <br/>
           <input type="checkbox" :id="'checkbox' + imageIndex" v-model="list[imageIndex].selected">
-          <label :for="'checkbox' + imageIndex">{{ list[imageIndex].title }}</label>
+          <label :for="'checkbox' + imageIndex"><b>{{ list[imageIndex].title }}</b></label><br/>
+          <label :for="'checkbox' + imageIndex">Width: {{ list[imageIndex].width }} Height: {{ list[imageIndex].height }}</label>
         </div>
       </div>
     </div>
