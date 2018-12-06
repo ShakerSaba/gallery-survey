@@ -1,28 +1,40 @@
 <template>
   <div>
-    <h2><b>Art Gallery Survey</b></h2>
+    <div class="splash" v-if="state=='splash'">
+      <h1><b>Noursat Art Gallery Survey</b></h1>
+      <br><h2>Welcome!</h2><br>
+      <p>Help us import the art pieces that are most appreciated by our community. Please choose at least ten of your favorite art pieces from the categories below.</p>
+      <p>When you have finished the survey, enter your Name and Email address on the right and then hit the "Submit" button.</p>
+      <button class="button" @click="state = 'survey'">Begin</button>
+    </div>
     <div v-if="state=='survey'">
-      <p>Please select the art pieces you wish to see added to the art gallery. It is suggested you select around 10 items.</p>
-      <p>When you are done, enter your Email and Name then hit the "Submit" button.</p>
-      <br/>
-      Name: <input type="text" id="name" v-model="name">
-      Email: <input type="text" id="email" v-model="email">
-      <button id="submitbutton" @click="submit">Submit</button>
-      <br/>
-      <br/>
+      <table style="border-spacing: 10px;">
+        <tr>
+          <td style="width:70%" class="top">
+            <h2><b>Noursat Art Gallery Survey</b></h2>
+            <p>Help us import the art pieces that are most appreciated by our community. Please choose at least ten of your favorite art pieces from the categories below.</p>
+            <p>Press the button below to begin.</p>
+          </td>
+          <td style="width:30%;text-align:left;" class="top">
+            Name:<br> <input style="font-size:20px" type="text" id="name" v-model="name"><br>
+            Email:<br> <input style="font-size:20px" type="text" id="email" v-model="email"><br><br>
+            <button class="button" @click="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
           
       <h3>Select a Category:</h3>
-      <button v-if="group == 'SMALLSTONE'" class="disabled">Smaller Stonework</button>
-      <button v-else class="button" @click="group = 'SMALLSTONE'">Smaller Stonework</button>
+      <button v-if="group == 'SMALLSTONE'" class="disabled">Small Stonework</button>
+      <button v-else class="button" @click="group = 'SMALLSTONE'">Small Stonework</button>
 
-      <button v-if="group == 'CARVING'" class="disabled">Stone Carvings</button>
-      <button v-else class="button" @click="group = 'CARVING'">Stone Carvings</button>
+      <button v-if="group == 'CARVING'" class="disabled">Large Carvings</button>
+      <button v-else class="button" @click="group = 'CARVING'">Large Carvings</button>
 
-      <button v-if="group == 'SCULPTURE'" class="disabled">Stone Statues</button>
-      <button v-else class="button" @click="group = 'SCULPTURE'">Stone Statues</button>
+      <button v-if="group == 'SCULPTURE'" class="disabled">Large Statues</button>
+      <button v-else class="button" @click="group = 'SCULPTURE'">Large Statues</button>
 
-      <button v-if="group == 'PAINTING'" class="disabled">Paintings</button>
-      <button v-else class="button" @click="group = 'PAINTING'">Paintings</button>
+      <button v-if="group == 'PAINTING'" class="disabled">Oil Paintings</button>
+      <button v-else class="button" @click="group = 'PAINTING'">Oil Paintings</button>
 
       <button v-if="group == 'STAINGLASS'" class="disabled">Stained Glass</button>
       <button v-else class="button" @click="group = 'STAINGLASS'">Stained Glass</button>
@@ -32,22 +44,25 @@
         <div
           v-for="(image, imageIndex) in images"
           :key="imageIndex"
-          class="imageFrame"
+          v-bind:class="{imageFrameA: !list[imageIndex].selected,imageFrameB: list[imageIndex].selected}"
           :style="'flex:' + list[imageIndex].flex + '1 24%'"
           v-if="list[imageIndex].group == group"
         >
           <img class="image" @click="index = imageIndex" :src="image">
           <br/>
-          <input type="checkbox" :id="'checkbox' + imageIndex" v-model="list[imageIndex].selected">
-          <label :for="'checkbox' + imageIndex"><b>{{ list[imageIndex].title }}</b></label><br/>
-          <label :for="'checkbox' + imageIndex">Width: {{ list[imageIndex].width }} Height: {{ list[imageIndex].height }}</label>
+          <label class="container"><b>{{ list[imageIndex].title }}</b><br>
+            Width: {{ list[imageIndex].width }} Height: {{ list[imageIndex].height }}
+            <input type="checkbox" :id="'checkbox' + imageIndex" v-model="list[imageIndex].selected">
+            <span class="checkmark"></span>
+          </label>
+          <br/>
         </div>
       </div>
     </div>
-    <div v-else-if="state=='loading'">
+    <div v-else-if="state=='loading'" class="splash">
       <div class="loader" style="horizontal"></div> 
     </div>
-    <div v-else-if="state=='result'">
+    <div v-else-if="state=='result'" style="width:70%"  class="splash">
       <div v-if="!msg">
         <p>Your survey answer has been accepted.</p>
         <p>Thank you for your time!</p>
@@ -56,7 +71,7 @@
         <p>{{ msg }}</p>
       </div>
       <br/>
-      <p>Try again? <button id="gobackbutton" @click="reset">Go Back</button></p>
+      <p>Try again? <button class="button" @click="reset">Go Back</button></p>
     </div>
   </div>
 </template>
@@ -75,9 +90,18 @@
         name: '',
         email: '',
         group: '',
-        state: 'survey',
+        state: 'splash',
         msg: ''
       };
+    },
+    computed:{
+      frameSelected: function(){
+        //console.log(imageIndex);
+        var theClass = 'ImageFrameA';
+        var self=this;
+        
+        return theClass;
+      }
     },
     methods: {
       reset: function(){
@@ -157,8 +181,17 @@ a {
   color: #42b983;
 }
 
-.imageFrame {
-  border: 1px solid #ebebeb;
+.imageFrameA {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.imageFrameB {
+  border: 2px solid #9ebcff;
+  background-color: #9ebcff;
+  border-radius: 2px;
   margin: 5px;
 }
 
@@ -170,12 +203,12 @@ a {
 }
 
 .image {
-  width: 96%;
-  margin: 2%;
+  width: 98%;
+  margin: 1%;
 }
 
 .button {
-  background-color: rgb(81, 165, 221);
+  background-color: rgb(81, 130, 221);
   color: white;
   border: none;
   border-radius: 4px;
@@ -184,7 +217,7 @@ a {
   font-size: 16px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  border: 1px solid rgb(81, 165, 221);
+  border: 1px solid rgb(81, 130, 221);
 }
 
 .button:hover {
@@ -200,7 +233,7 @@ a {
   padding: 8px 20px;
   text-align: center;
   font-size: 16px;
-  border: 1px solid rgb(81, 165, 221);
+  border: 1px solid rgb(81, 130, 221);
 }
 
 .loader {
@@ -217,4 +250,94 @@ a {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.splash {
+  vertical-align: middle;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 50px 50px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 2px grey;
+  background-color: white;
+  font-size: 18px;
+}
+.top {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px 50px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 2px grey;
+  background-color: white;
+  font-size: 18px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  border: solid 2px rgb(43, 43, 43);
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(34, 143, 216);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 </style>
