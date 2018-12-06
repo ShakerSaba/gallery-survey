@@ -4,16 +4,16 @@
       <h1><b>Noursat Art Gallery Survey</b></h1>
       <br><h2>Welcome!</h2><br>
       <p>Help us import the art pieces that are most appreciated by our community. Please choose at least ten of your favorite art pieces from the categories below.</p>
-      <p>When you have finished the survey, enter your Name and Email address on the right and then hit the "Submit" button.</p>
-      <button class="button" @click="state = 'survey'">Begin</button>
+      <p>Press the button below to begin.</p>
+      <button class="button" @click="state = 'survey';group = 'SMALLSTONE';">Begin</button>
     </div>
     <div v-if="state=='survey'">
       <table style="border-spacing: 10px;">
         <tr>
           <td style="width:70%" class="top">
             <h2><b>Noursat Art Gallery Survey</b></h2>
-            <p>Help us import the art pieces that are most appreciated by our community. Please choose at least ten of your favorite art pieces from the categories below.</p>
-            <p>Press the button below to begin.</p>
+              <p>Help us import the art pieces that are most appreciated by our community. Please choose at least ten of your favorite art pieces from the categories below.</p>
+              <p>When you have finished the survey, enter your Name and Email address on the right and then hit the "Submit" button.</p>
           </td>
           <td style="width:30%;text-align:left;" class="top">
             Name:<br> <input style="font-size:20px" type="text" id="name" v-model="name"><br>
