@@ -2,7 +2,7 @@
   <div>
     <div class="splash" v-if="state=='splash'">
       <h1><b>Noursat Art Gallery Survey</b></h1>
-      <br><h2>Welcome!</h2><br>
+      <br><h2>Welcome!</h2>
       <p>Help us import the art pieces that are most appreciated by our community.</p>
       <p>Press the button below to begin.</p>
       <button class="button" @click="state = 'survey';group = 'SMALLSTONE';">Begin</button>
@@ -10,14 +10,16 @@
     <div v-if="state=='survey'">
       <table style="border-spacing: 10px;">
         <tr>
-          <td style="width:70%" class="top">
-            <h2><b>Noursat Art Gallery Survey</b></h2>
-              <p>Please choose at least ten of your favorite art pieces from the categories below.</p>
-              <p>When you have finished the survey, enter your Name and Email address on the right and then hit the "Submit" button.</p>
+          <td style="width:70%">
+            <div class="top">
+              <h2><b>Noursat Art Gallery Survey</b></h2>
+              <p>Please choose at least ten of your favorite art pieces from the categories below. When you have finished the survey, enter your Name and Email address on the right and then hit the "Submit" button.</p>
+              <p>For additional information please contact Marlon Oneid at 613-799-5650 or email: <a href="mailto:marlon.oneid@oneidengineering.com">marlon.oneid@oneidengineering.com</a></p>
+            </div>
+            <p style="text-align:left">This survey was designed by Shaker Saba. <a href="mailto:shakersilver@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/shaker-s-743b478b/">LinkedIn</a></p>
           </td>
           <td style="width:30%;text-align:left;" class="top">
             Name:<br> <input style="font-size:20px" type="text" id="name" v-model="name"><br>
-            Email:<br> <input style="font-size:20px" type="text" id="email" v-model="email"><br><br>
             <button class="button" @click="submit">Submit</button>
           </td>
         </tr>
