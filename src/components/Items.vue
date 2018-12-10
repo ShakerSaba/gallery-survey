@@ -379,6 +379,16 @@ a {
   [class*="imageFrame"] {
     flex: 1 1 100%;
   }
+  .splash {
+    padding: 15px;
+    width: 90%;
+  }
+  h1{
+    font-size: 26px
+  }
+  h2{
+    font-size: 20px
+  }
 }
 
 * {
