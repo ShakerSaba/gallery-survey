@@ -13,7 +13,7 @@
           <div class="top">
             <h2><b>Noursat Art Gallery Survey</b></h2>
             <p>Please choose at least ten of your favorite art pieces from the categories below. When you have finished the survey, enter your Name in the adjacent box and then hit the "Submit" button.</p>
-            <p>For additional information please contact Marlon Oneid at 613-799-5650 or email: <a href="mailto:marlon.oneid@oneidengineering.com">marlon.oneid@oneidengineering.com</a></p>
+            <p>For additional information please contact Marlon Oneid at 613-799-5650 or by <a href="mailto:marlon.oneid@oneidengineering.com">Email</a></p>
           </div>
         </div>
         <div class="col-3">
@@ -48,7 +48,7 @@
           v-for="(image, imageIndex) in images"
           :key="imageIndex"
           v-bind:class="{imageFrameA: !list[imageIndex].selected,imageFrameB: list[imageIndex].selected}"
-          :style="'flex:' + list[imageIndex].flex + '1 24%'"
+          :style="'flex-grow:' + list[imageIndex].flex"
           v-if="list[imageIndex].group == group"
         >
           <label class="container">
@@ -187,6 +187,7 @@ a {
 }
 
 .imageFrameA {
+  flex: 0 1 24%;
   border: 2px solid #ffffff;
   background-color: #ffffff;
   border-radius: 2px;
@@ -194,6 +195,7 @@ a {
 }
 
 .imageFrameB {
+  flex: 0 1 24%;
   border: 2px solid #9ebcff;
   background-color: #9ebcff;
   border-radius: 2px;
@@ -370,10 +372,12 @@ a {
   padding: 5px;
 }
 
-@media only screen and (max-width: 1000px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 768px) {
   [class*="col-"] {
     width: 100%;
+  }
+  [class*="imageFrame"] {
+    flex: 1 1 100%;
   }
 }
 
