@@ -13,7 +13,7 @@
           <td style="width:70%">
             <div class="top">
               <h2><b>Noursat Art Gallery Survey</b></h2>
-              <p>Please choose at least ten of your favorite art pieces from the categories below. When you have finished the survey, enter your Name and Email address on the right and then hit the "Submit" button.</p>
+              <p>Please choose at least ten of your favorite art pieces from the categories below. When you have finished the survey, enter your Name on the right and then hit the "Submit" button.</p>
               <p>For additional information please contact Marlon Oneid at 613-799-5650 or email: <a href="mailto:marlon.oneid@oneidengineering.com">marlon.oneid@oneidengineering.com</a></p>
             </div>
             <p style="text-align:left">This survey was designed by Shaker Saba. <a href="mailto:shakersilver@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/shaker-s-743b478b/">LinkedIn</a></p>
@@ -90,7 +90,6 @@
         images: items.images,
         index: null,
         name: '',
-        email: '',
         group: '',
         state: 'splash',
         msg: ''
@@ -112,7 +111,6 @@
           self.list[i].selected = false;
         }
         self.name = '';
-        self.email = '';
         self.msg = '';
         self.state = 'survey';
       },
@@ -120,8 +118,8 @@
         var results = [];
         var self = this;
         
-        if(!self.name || !self.email){
-          window.alert("You must enter in both a Name and Email to submit the survey!");
+        if(!self.name){
+          window.alert("You must enter your name to submit the survey!");
           self.state = 'survey';
           return;
         }
@@ -136,7 +134,6 @@
           url : 'https://gallery-storage.herokuapp.com/results',
           data : {
             name: self.name,
-            email: self.email,
             results: results.toString()
           },
           headers: {
