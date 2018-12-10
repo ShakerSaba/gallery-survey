@@ -1,5 +1,6 @@
 <template>
   <div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="splash" v-if="state=='splash'">
       <h1><b>Noursat Art Gallery Survey</b></h1>
       <br><h2>Welcome!</h2>
@@ -337,6 +338,10 @@ a {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 </style>
