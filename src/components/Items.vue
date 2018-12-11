@@ -8,6 +8,7 @@
       <button class="button" @click="state = 'survey';group = 'SMALLSTONE';">Begin</button>
     </div>
     <div v-if="state=='survey'">
+      <button @click="toTop" class="myBtn" id="topbutton">Top</button>
       <div class="row">
         <div class="col-9">
           <div class="top">
@@ -105,6 +106,9 @@ export default {
       return theClass;
     }
   },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
   methods: {
     reset: function(){
       var self = this;
@@ -156,6 +160,24 @@ export default {
         self.state = 'result';
         self.msg = error.message;
       });
+    },
+    handleScroll: function() {
+      if (screen.width > 768 && (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)) {
+        document.getElementById("topbutton").style.display = "block";
+      } else if (screen.width <= 768 && (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)) {
+        document.getElementById("topbutton").style.display = "block";
+      } else {
+        document.getElementById("topbutton").style.display = "none";
+      }
+    },
+    toTop: function() {
+      if(screen.width >= 768){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }else{
+        document.body.scrollTop = 600;
+        document.documentElement.scrollTop = 600;
+      }
     }
   },
   components: {
@@ -216,6 +238,7 @@ a {
 }
 
 .button {
+  cursor: pointer;
   background-color: rgb(81, 130, 221);
   color: white;
   border: none;
@@ -306,8 +329,8 @@ a {
 .checkmark {
   border: solid 2px rgb(43, 43, 43);
   position: absolute;
-  bottom: 5%;
-  left: 2%;
+  bottom: 25px;
+  left: 5px;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -337,8 +360,8 @@ a {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-  left: 9px;
-  top: 5px;
+  left: 7px;
+  top: 3px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -391,7 +414,24 @@ a {
   }
 }
 
+.myBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(81, 130, 221);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px; 
+  font-size: 18px;
+}
+
 * {
   box-sizing: border-box;
 }
+
 </style>
