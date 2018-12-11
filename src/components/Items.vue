@@ -45,17 +45,17 @@
 
       <div class="flex-container">
         <div
-          v-for="(image, imageIndex) in images"
-          :key="imageIndex"
-          v-bind:class="{imageFrameA: !list[imageIndex].selected,imageFrameB: list[imageIndex].selected}"
-          :style="'flex-grow:' + list[imageIndex].flex"
-          v-if="list[imageIndex].group == group"
+          v-for="(item, listIndex) in list"
+          :key="listIndex"
+          v-bind:class="{imageFrameA: !item.selected,imageFrameB: item.selected}"
+          :style="'flex-grow:' + item.flex"
+          v-if="item.group == group"
         >
           <label class="container">
-            <img class="image" :src="image"><br/>
-            <b>{{ list[imageIndex].title }}</b><br>
-            Width: {{ list[imageIndex].width }} Height: {{ list[imageIndex].height }}
-            <input type="checkbox" :id="'checkbox' + imageIndex" v-model="list[imageIndex].selected">
+            <img class="image" :src="getImgUrl(listIndex)"><br/>
+            <b>{{ item.title }}</b><br>
+            Width: {{ item.width }} Height: {{ item.height }}
+            <input type="checkbox" :id="'checkbox' + listIndex" v-model="item.selected">
             <span class="checkmark"></span>
           </label>
           <br/>
@@ -88,7 +88,6 @@ export default {
   data: function () {
     return {
       list: items.items,
-      images: items.images,
       index: null,
       name: '',
       group: '',
@@ -159,6 +158,10 @@ export default {
         self.state = 'result';
         self.msg = error.message;
       });
+    },
+    getImgUrl(index) {
+      var imgs = require.context('../assets/images/', false, /\.jpg$/);
+      return imgs('./' + (index+1).toString().padStart(3,'0') + ".jpg");
     },
     handleScroll: function() {
       if (screen.width > 768 && (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)) {
