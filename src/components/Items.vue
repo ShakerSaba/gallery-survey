@@ -43,7 +43,6 @@
       <button v-if="group == 'STAINGLASS'" class="disabled">Stained Glass</button>
       <button v-else class="button" @click="group = 'STAINGLASS'">Stained Glass</button>
 
-      <gallery :images="images" :index="index" @close="index = null"></gallery>
       <div class="flex-container">
         <div
           v-for="(image, imageIndex) in images"
