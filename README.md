@@ -1,6 +1,6 @@
 # gallery-survey
 
-> An online survey for canvasing a local church community for art pieces to be imported to a local gallery.
+> An online survey for canvasing a local church community for art pieces to be imported to a local gallery. Live version of the site at https://gallery-survey.herokuapp.com/
 
 ## Build Setup
 
