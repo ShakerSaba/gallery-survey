@@ -13,13 +13,14 @@
         <div class="col-9">
           <div class="top">
             <h2><b>Noursat Art Gallery Survey</b></h2>
-            <p>Please choose at least ten of your favorite art pieces from the categories below. When you have finished the survey, enter your Name in the adjacent box and then hit the "Submit" button.</p>
+            <p>Please choose <b>at least ten</b> of your favorite art pieces from the categories below. Ten choices minimum are required but feel free to choose more. When you have finished the survey, enter your Name in the adjacent box and then hit the "Submit" button.</p>
             <p>For additional information please contact Marlon Oneid at 613-799-5650 or by <a href="mailto:marlon.oneid@oneidengineering.com">Email</a></p>
           </div>
         </div>
         <div class="col-3">
           <div class="top" style="text-align:left">
-            Name:<br> <input style="font-size:20px" type="text" id="name" v-model="name"><br>
+            Name:<br> <input style="width: 100%; font-size:20px" type="text" id="name" v-model="name"><br>
+            Email:<br> <input style="width: 100%; font-size:20px" type="text" id="email" v-model="email"><br>
             <br>
             <button class="button" @click="submit">Submit</button>
           </div>
@@ -90,6 +91,7 @@ export default {
       list: items.items,
       index: null,
       name: '',
+      email: '',
       group: '',
       state: 'splash',
       msg: ''
@@ -114,22 +116,31 @@ export default {
         self.list[i].selected = false;
       }
       self.name = '';
+      self.email = '';
       self.msg = '';
       self.state = 'survey';
     },
     submit: function(){
       var results = [];
       var self = this;
+      self.state = 'loading';
       
-      if(!self.name){
-        window.alert("You must enter your name to submit the survey!");
+      if(!self.name || !self.email){
+        window.alert("You must enter both your name and email to submit the survey!");
         self.state = 'survey';
         return;
       }
-      self.state = 'loading';
-
+      var count = 0;
       for(var i=0;i<self.list.length;++i){
         results.push(self.list[i].selected);
+        if(self.list[i].selected){
+          count++;
+        }
+      }
+      if(count < 10){
+        window.alert("You must select at least 10 items before submitting!");
+        self.state = 'survey';
+        return;
       }
               
       axios({
@@ -137,6 +148,7 @@ export default {
         url : 'https://gallery-storage.herokuapp.com/results',
         data : {
           name: self.name,
+          email: self.email,
           results: results.toString()
         },
         headers: {
@@ -164,16 +176,16 @@ export default {
       return imgs('./' + (index+1).toString().padStart(3,'0') + ".jpg");
     },
     handleScroll: function() {
-      if (screen.width > 768 && (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)) {
+      if (screen.width > 900 && (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)) {
         document.getElementById("topbutton").style.display = "block";
-      } else if (screen.width <= 768 && (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)) {
+      } else if (screen.width <= 900 && (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)) {
         document.getElementById("topbutton").style.display = "block";
       } else {
         document.getElementById("topbutton").style.display = "none";
       }
     },
     toTop: function() {
-      if(screen.width >= 768){
+      if(screen.width >= 900){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }else{
