@@ -8,21 +8,30 @@
       <button class="button" @click="state = 'survey';group = 'SMALLSTONE';">Begin</button>
     </div>
     <div v-if="state=='survey'">
-      <button @click="toTop" class="myBtn" id="topbutton">Top</button>
+      <button @click="toTop" class="myBtn" id="topbutton" style="border:solid white;font-size:28px">▲</button>
+
+      <button @click="openModal" class="myBtn" id="submitModal" style="border:solid white;display:block;left:30px;font-size:28px">Submit</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div><span @click="closeModal" class="close">&times;</span></div>
+          <br><br>
+          <div style="text-align:left" class="col-6">
+            Name:<br> <input style="width: 100%; font-size:20px" type="text" id="name" v-model="name">
+          </div>
+          <div style="text-align:left" class="col-6">
+            Email:<br> <input style="width: 100%; font-size:20px" type="text" id="email" v-model="email">
+          </div>
+          <br><br>
+          <button class="button" @click="submit" style="font-size:28px">Submit</button>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-9">
+        <div class="col-12">
           <div class="top">
             <h2><b>Noursat Art Gallery Survey</b></h2>
             <p>Please choose <b>at least ten</b> of your favorite art pieces from the categories below. Ten choices minimum are required but feel free to choose more. When you have finished the survey, enter your Name in the adjacent box and then hit the "Submit" button.</p>
             <p>For additional information please contact Marlon Oneid at 613-799-5650 or by <a href="mailto:marlon.oneid@oneidengineering.com">Email</a></p>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="top" style="text-align:left">
-            Name:<br> <input style="width: 100%; font-size:20px" type="text" id="name" v-model="name"><br>
-            Email:<br> <input style="width: 100%; font-size:20px" type="text" id="email" v-model="email"><br>
-            <br>
-            <button class="button" @click="submit">Submit</button>
           </div>
         </div>
         <p class="col-12" style="text-align:left">This survey was designed by Shaker Saba. <a href="mailto:shakersilver@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/shaker-s-743b478b/">LinkedIn</a></p>
@@ -110,6 +119,14 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    openModal: function (){
+      document.getElementById('myModal').style.display = "block";
+      document.getElementById('submitModal').style.display = "none";
+    },
+    closeModal: function(){
+      document.getElementById('myModal').style.display = "none";
+      document.getElementById('submitModal').style.display = "block";
+    },
     reset: function(){
       var self = this;
       for(var i=0;i<self.list.length;++i){
@@ -229,7 +246,6 @@ a {
   border-radius: 2px;
   margin: 5px;
 }
-
 .imageFrameB {
   flex: 0 1 24%;
   border: 2px solid #9ebcff;
@@ -237,14 +253,12 @@ a {
   border-radius: 2px;
   margin: 5px;
 }
-
 .flex-container {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   align-content: flex-start;
 }
-
 .image {
   width: 98%;
   margin: 1%;
@@ -264,12 +278,10 @@ a {
   transition-duration: 0.4s;
   border: 1px solid rgb(81, 130, 221);
 }
-
 .button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
-
 .disabled {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -290,7 +302,6 @@ a {
   height: 120px;
   animation: spin 2s linear infinite;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -303,7 +314,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 2px solid rgb(255, 255, 255);
-  padding: 50px 50px;
+  padding: 50px;
   border-radius: 3px;
   box-shadow: 5px 5px 2px grey;
   background-color: white;
@@ -329,8 +340,6 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
-
-/* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -338,8 +347,6 @@ a {
   height: 0;
   width: 0;
 }
-
-/* Create a custom checkbox */
 .checkmark {
   border: solid 2px rgb(43, 43, 43);
   position: absolute;
@@ -349,30 +356,20 @@ a {
   width: 25px;
   background-color: #eee;
 }
-
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: rgb(34, 143, 216);
 }
-
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
-/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
-
-/* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 7px;
   top: 3px;
@@ -384,7 +381,6 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 .row::after {
   content: "";
   clear: both;
@@ -403,7 +399,6 @@ a {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
 [class*="col-"] {
   float: left;
   padding: 5px;
@@ -442,6 +437,41 @@ a {
   padding: 15px;
   border-radius: 10px; 
   font-size: 18px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 5px 5px 2px grey;
+  background-color: white;
+  font-size: 18px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 36px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 * {
