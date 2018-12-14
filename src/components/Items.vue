@@ -28,9 +28,9 @@
 
       <div class="row">
         <div class="col-12">
-          <div class="top" style="background-image:src('../assets/banner.png')">
+          <div class="banner">
             <h2><img style="width:130px" src="../assets/logo.png"> <b>Noursat Art Gallery Survey</b></h2>
-            <p>Please choose <b>at least ten</b> of your favorite art pieces from the categories below. Ten choices minimum are required but feel free to choose more. When you have finished the survey, enter your Name in the adjacent box and then hit the "Submit" button.</p>
+            <p>Please choose <b>at least ten</b> of your favorite art pieces from the categories below. Ten choices minimum are required but feel free to choose more. When you have finished the survey, press the submit button below to enter your Name and Email and submit the survey.</p>
             <p>For additional information please contact Marlon Oneid at 613-799-5650 or by <a href="mailto:marlon.oneid@oneidengineering.com">Email</a></p>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default {
       });
     },
     getImgUrl(index) {
-      var imgs = require.context('../assets/images/', false, /\.jpg$/);
+      var imgs = require.context('../assets/images/', true, /\.jpg$/);
       return imgs('./' + (index+1).toString().padStart(3,'0') + ".jpg");
     },
     handleScroll: function() {
@@ -327,6 +327,17 @@ a {
   box-shadow: 5px 5px 2px grey;
   background-color: white;
   font-size: 18px;
+}
+.banner {
+  border: 2px none rgb(112, 95, 95);
+  padding: 20px 50px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 2px grey;
+  background-color: white;
+  font-size: 18px;
+  color: rgb(251, 255, 255);
+  background-image: url('../assets/banner.jpg');
+  text-shadow: 1px 1px #000000;
 }
 
 .container {
