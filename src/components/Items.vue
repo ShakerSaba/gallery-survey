@@ -28,8 +28,8 @@
 
       <div class="row">
         <div class="col-12">
-          <div class="top">
-            <h2><b>Noursat Art Gallery Survey</b></h2>
+          <div class="top" style="background-image:src('../assets/banner.png')">
+            <img src="../assets/logo.png"><h2><b>Noursat Art Gallery Survey</b></h2>
             <p>Please choose <b>at least ten</b> of your favorite art pieces from the categories below. Ten choices minimum are required but feel free to choose more. When you have finished the survey, enter your Name in the adjacent box and then hit the "Submit" button.</p>
             <p>For additional information please contact Marlon Oneid at 613-799-5650 or by <a href="mailto:marlon.oneid@oneidengineering.com">Email</a></p>
           </div>
